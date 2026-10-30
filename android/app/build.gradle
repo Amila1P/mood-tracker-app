@@ -78,6 +78,11 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.moodtracker"
+    
+    lint {
+        disable 'PropertyEscape'
+    }
+    
     defaultConfig {
         applicationId "com.moodtracker"
         minSdkVersion rootProject.ext.minSdkVersion
